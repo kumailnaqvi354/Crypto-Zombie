@@ -816,7 +816,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1360,
+                              "referencedDeclaration": 1362,
                               "src": "396:4:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_ZombieHelper_$1174",
@@ -3138,7 +3138,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1360,
+                              "referencedDeclaration": 1362,
                               "src": "396:4:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_ZombieHelper_$1174",
@@ -4974,7 +4974,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.2",
-  "updatedAt": "2021-09-18T15:17:30.764Z",
+  "updatedAt": "2021-09-18T17:17:38.280Z",
   "devdoc": {
     "methods": {
       "isOwner()": {
