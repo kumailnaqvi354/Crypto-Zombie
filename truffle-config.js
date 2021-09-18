@@ -41,12 +41,22 @@ module.exports = {
     // You should run a client (like ganache-cli, geth or parity) in a separate terminal
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
-    //
-    // development: {
-    //  host: "127.0.0.1",     // Localhost (default: none)
-    //  port: 8545,            // Standard Ethereum port (default: none)
-    //  network_id: "*",       // Any network (default: none)
-    // },
+
+    development: {
+      host: "127.0.0.1",     // Localhost (default: none)
+      port: 8545,            // Standard Ethereum port (default: none)
+      network_id: "*",       // Any network (default: none)
+    },
+    // loom_testnet: {
+    //   provider: function() {
+    //     const privateKey = 'YOUR_PRIVATE_KEY';
+    //     const chainId = 'extdev-plasma-us1';
+    //     const writeUrl = 'wss://extdev-basechain-us1.dappchains.com/websocket';
+    //     const readUrl = 'wss://extdev-basechain-us1.dappchains.com/queryws';
+    //     return new LoomTruffleProvider(chainId, writeUrl, readUrl, privateKey);
+    //   },
+    //   network_id: 'extdev'
+    // }
     // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
@@ -75,22 +85,22 @@ module.exports = {
   },
 
   // Set default mocha options here, use special reporters etc.
-  mocha: {
-    // timeout: 100000
-  },
+  // mocha: {
+  //   // timeout: 100000
+  // },
 
   // Configure your compilers
   compilers: {
     solc: {
       version: ">=0.5.0 <0.6.0",    // Fetch exact version from solc-bin (default: truffle's version)
-      docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
-      settings: {          // See the solidity docs for advice about optimization and evmVersion
-       optimizer: {
-         enabled: false,
-         runs: 200
-       },
-       evmVersion: "byzantium"
-      }
+      // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
+      // settings: {          // See the solidity docs for advice about optimization and evmVersion
+      //  optimizer: {
+      //    enabled: false,
+      //    runs: 200
+      //  },
+      //  evmVersion: "byzantium"
+      // }
     }
   }
 };
